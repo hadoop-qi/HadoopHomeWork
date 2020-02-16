@@ -1,0 +1,5 @@
+zhangsan	30	1
+lisi		35	2
+wangwu		25	1
+zhaoliu		32	1
+qianqi		28	2

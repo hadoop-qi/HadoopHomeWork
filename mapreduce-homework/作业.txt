@@ -1,0 +1,59 @@
+1. 修改二次排序后的输出结果
+   修改前：
+       yourself	27.txt-->5 12.txt-->5 11.txt-->3 10.txt-->2 21.txt-->2 28.txt-->2
+
+   修改后：只保留最大的 3 个
+       yourself	27.txt-->5 12.txt-->5 11.txt-->3 
+
+2. 修改 dep.txt 内容，增加一列表示办公室地址，完成 map 端连接
+   1   Dev    203
+   2   Ter    303
+
+
+
+3. 修改 emp.txt 内容，增加两行数据，完成 semijoin 功能
+   bianfuxia    40    9
+   chaoren      35    8
+
+
+   SemiJoin，也叫半连接。它的产生动机是：对于reduce side join，跨机器的数据传输量非常大，这成了join操作的一个瓶颈，如果能够在map端过滤掉不会参加join操作的数据，则可以大大节省网络IO。 
+实现方法很简单：选取一个小表，假设是File1，将其参与join的key抽取出来，保存到文件File3中，File3文件一般很小，可以放到 
+内存中。在map阶段，使用 job.addCache() 将File3 添加到缓存，然后将File2中不在File3中的 key对应的记录过滤掉，剩下的reduce阶段的工作与reduce side join相同。
+
+
+4. 使用连接完成：
+
+孩子        父亲
+zhangsan    zhanger
+lisi        lisan
+zhanger     zhangyi
+lisan       lier
+
+求
+
+孩子        爷爷
+zhangsan    zhangyi
+lisi        lier
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

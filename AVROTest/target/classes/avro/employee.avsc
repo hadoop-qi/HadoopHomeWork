@@ -1,0 +1,10 @@
+{
+  "namespace":"com.qi.avrobean",
+  "type":"record",
+  "name":"Employee",
+  "fields":[
+    {"name":"name","type":"string"},
+    {"name":"gender","type":["boolean","null"]},
+    {"name":"salary","type":["double","null"]}
+  ]
+} 

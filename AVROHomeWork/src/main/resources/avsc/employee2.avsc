@@ -1,0 +1,11 @@
+{
+  "namespace":"com.qi.avrobean",
+  "type":"record",
+  "name":"Employee2",
+  "fields":[
+    {"name":"num","type":"int"},
+    {"name":"name","type":["string","null"]},
+    {"name":"age","type":["int","null"]},
+    {"name":"departId","type":["int","null"]}
+  ]
+}

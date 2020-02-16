@@ -1,0 +1,9 @@
+{
+  "namespace":"com.qi.avrobean",
+  "type":"record",
+  "name":"EmployeeFile",
+  "fields":[
+   {"name":"name","type":"string"},	
+   {"name":"content","type":"string"}
+  ]
+}

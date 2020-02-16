@@ -1,0 +1,9 @@
+2. 统计每个 操作，每天执行了多少次
+    remove     100
+    login      20
+
+create	2059
+download	1982
+login	2005
+remove	1950
+upload	2004

@@ -1,0 +1,9 @@
+{
+  "namespace":"com.qi.merge",
+  "type":"record",
+  "name":"SmallFile",
+  "fields":[
+   {"name":"name","type":"string"},	
+   {"name":"content","type":"string"}
+  ]
+}
